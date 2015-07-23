@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.password">123456</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hey_mom_db</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="show_sql">true</property>
+    <mapping class="dao.model.Student"/>
+    <mapping class="dao.model.Organization"/>
+    <mapping class="dao.model.AccSt"/>
+    <mapping class="dao.model.StMo"/>
+    <mapping class="dao.model.Account"/>
+    <mapping class="dao.model.Mointor"/>
+    <mapping class="dao.model.AppGroup"/>
+    <mapping class="dao.model.AppGroupRole"/>
+    <mapping class="dao.model.AppRole"/>
+    <mapping class="dao.model.Report"/>
+    <mapping class="dao.model.ReportLog"/>
+    <mapping class="dao.model.Gallery"/>
+    <mapping class="dao.model.ReportType"/>
+     <mapping class="dao.model.ReportLookup"/>
+  </session-factory>
+</hibernate-configuration>
